@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luxury Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <div class="booking-card">
+
+        <h1>LUXURY HOTEL</h1>
+        <h3>Booking</h3>
+
+        <form id="bookingForm">
+
+            <div class="row">
+                <div>
+                    <label>Check-in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+
+                <div>
+                    <label>Check-out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+            </div>
+
+            <label>Room Type</label>
+            <select id="roomType">
+                <option value="150">Single - $150/night</option>
+                <option value="250">Deluxe - $250/night</option>
+                <option value="350">Suite - $350/night</option>
+            </select>
+
+            <label>Guests</label>
+            <input type="number" min="1" value="1">
+
+            <label>Special Requests</label>
+            <textarea placeholder="Sea view, decoration, breakfast..."></textarea>
+
+            <div class="price-box">
+                <p><span id="nights">0</span> Nights</p>
+                <p>Total: <span id="totalPrice">$0</span></p>
+                <span class="discount">20% OFF</span>
+            </div>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
