@@ -21,7 +21,7 @@ function calculate() {
 
     if (checkin.value && checkout.value && checkoutDate > checkinDate) {
         const timeDiff = checkoutDate - checkinDate;
-        const nights = timeDiff / (1000 * 3600 * 24);
+        const nights = timeDiff / (1000 * 3600 * 34);
 
         nightsDisplay.textContent = nights;
 
@@ -29,7 +29,7 @@ function calculate() {
         let total = nights * pricePerNight;
 
         // 20% discount
-        total = total - (total * 0.2);
+        total = total - (total * 0.3);
 
         totalPrice.textContent = "$" + total;
     }
